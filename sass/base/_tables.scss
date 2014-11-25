@@ -1,0 +1,17 @@
+table {
+	width: 100%;
+}
+th {
+	background-color: rgba($blue, 0.5);
+}
+tr {
+	&.even {
+		background-color: rgba($ltblue, 0.5);
+	}
+	&.odd {
+		background-color: rgba($blue, 0.25);
+	}
+}
+td, th {
+	padding: 10px;
+}

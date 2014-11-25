@@ -1,0 +1,147 @@
+// @import "susyone";
+
+*,
+*:before,
+*:after {
+  @include box-sizing('border-box');
+}
+
+.l-header,
+.l-sponsor,
+.l-main,
+.l-footer,
+.l-region--secondary,
+.l-tertiary {
+  .l-constrained {
+    @include container; 
+  }
+}
+
+
+.l-region--highlighted,
+.l-region--help,
+.l-region--sidebar-first,
+.l-region--sidebar-second {
+  margin-bottom: $vert-spacing-unit;
+}
+
+@include at-breakpoint($tab) { 
+  .l-header,
+  .l-main,
+  .l-footer,
+  .l-region--secondary,
+  .l-tertiary {
+    .l-constrained {
+      @include set-container-width; 
+    }
+  }
+  .l-sponsor {
+    .l-region--sponsor1 {
+      @include span-columns(4, 12);
+    }
+    .l-region--sponsor2 {
+      @include span-columns(4, 12);
+    }
+    .l-region--sponsor3 {
+      @include span-columns(4 omega, 12);
+    }
+  }
+
+  .has-sidebar-first,
+  .has-sidebar-second,
+  .has-two-sidebars {
+    .l-content {
+      @include span-columns(8, 12); // Span 8 out of 12 columns.
+    }
+    .l-region--sidebar-first,
+    .l-region--sidebar-second {
+      @include span-columns(4 omega, 12); // Span the last (omega) 4 columns of 12.
+    }
+    .l-region--sidebar-second {
+      clear: right;
+    }
+  }
+  .group-one-sidebar.group-sidebar-right {
+    .group-middle {
+      padding-right: 10px;
+    }
+    .group-right {
+      padding-left: 10px;
+    }
+  }
+  .l-region--footer-left {
+    @include span-columns(10, 12);
+  }
+  .l-region--footer-right {
+    @include span-columns(2 omega, 12);
+  }
+
+}
+
+@include at-breakpoint($desk) {
+  .l-header,
+  .l-main,
+  .l-footer,
+  .l-region--secondary,
+  .l-tertiary {
+    .l-constrained {
+     @include set-container-width;
+   }
+ }
+
+
+ .has-sidebar-first {
+  .l-content {
+    @include span-columns(12 omega, 16);
+  }
+  .l-region--sidebar-first {
+    @include span-columns(4, 16);
+  }
+}
+.has-sidebar-second {
+  .l-content {
+    @include span-columns(12, 16);
+  }
+  .l-region--sidebar-second {
+    @include span-columns(4 omega, 16);
+    clear: none;
+  }
+}
+
+.has-two-sidebars {
+  .l-content {
+    @include span-columns(8, 16); 
+    @include push(4, 16); 
+  }
+  .l-region--sidebar-first,
+  .l-region--sidebar-second {
+    @include span-columns(4, 16); 
+  }
+  .l-region--sidebar-first {
+    @include pull(12, 16); 
+  }
+  .l-region--sidebar-second {
+    @include omega; 
+    clear: none;
+  }
+}
+}
+
+// Display Suite Overrides.
+.ds-2col-stacked-fluid {
+  .group-left {
+    padding-right: 10px;
+  }
+  .group-right {
+      padding-left: 10px;
+  }
+  @include at-breakpoint($mobile) {
+    .group-left,
+    .group-right {
+      width: auto;
+      float: none;
+      padding: 0 0 20px 0;
+    }
+  }
+}
+

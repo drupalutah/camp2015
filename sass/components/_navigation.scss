@@ -1,0 +1,81 @@
+.l-navigation {
+	ul.menu {
+		text-align: center;
+		padding: 0;
+		margin: 0;
+
+		li {
+			list-style-image: none;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: inline-block;
+
+			a {
+				
+				display: block;
+				padding: 10px 20px;
+				font-family: $din;
+				text-transform: uppercase;
+				text-decoration: none;
+
+				@include link($menulink, $menuhover);
+
+				&.active {
+					color: $menuactive;
+				}
+			}
+		}
+	}
+	@include at-breakpoint($tab) {
+		ul.menu li {
+			font-size: 1.5em;
+		}
+	}
+}
+
+.tabs--primary {
+	border-bottom-color: $ltblue;
+}
+.tabs a {
+	background-color: $ltblue;
+
+	@include link($white, $orange);
+
+	&.active,
+	&:hover {
+		background-color: $white;
+		@include link($blue, $orange);
+	}
+}
+.l-footer {
+	ul.menu {
+		padding: 0;
+		margin: 0;
+		border-top: dotted 1px $menulink;
+
+		li {
+			list-style-image: none;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+
+			a {
+				
+				display: block;
+				padding: 5px 10px;
+				font-family: $din;
+				text-transform: uppercase;
+				text-decoration: none;
+
+				@include link($menulink, $menuhover);
+
+				&.active {
+					color: $menuactive;
+				}
+
+				border-bottom: dotted 1px $menulink;
+			}
+		}
+	}
+}

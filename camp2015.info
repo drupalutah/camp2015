@@ -1,0 +1,37 @@
+name = camp2015
+description = Please provide a description for your theme.
+base theme = omega
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/camp2015.normalize.css
+stylesheets[all][] = css/camp2015.hacks.css
+stylesheets[all][] = css/camp2015.styles.css
+stylesheets[all][] = css/camp2015.no-query.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/camp2015.behaviors.js
+
+; ========================================
+; Regions
+; ========================================
+regions[branding] = Branding
+regions[header] = Header
+regions[sponsor1] = Sponsor 1
+regions[sponsor2] = Sponsor 2
+regions[sponsor3] = Sponsor 3
+regions[navigation] = Navigation
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[footer] = Footer Top
+regions[footer_left] = Footer Left
+regions[footer_right] = Footer right

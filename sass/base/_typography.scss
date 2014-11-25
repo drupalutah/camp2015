@@ -1,0 +1,30 @@
+html,
+body {
+	color: $smoke;
+	font-family: $globalfont;
+}
+
+h1 {
+	font-family: $headingfont;
+	color: $ltblue;
+	text-transform: uppercase;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: $headingfont;
+	color: $green;
+	text-transform: uppercase;
+
+}
+
+h2.site-slogan {
+	color: $orange;
+}
+
+a {
+	@include link;
+}
+
+.l-footer {
+	@include link($gray, $smoke);
+}

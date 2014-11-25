@@ -1,0 +1,53 @@
+// I love me some colored buttons!
+@mixin button($color: $buttonbg, $text: $buttontext, $radius: 5px) { //Previously: $color: $orange;
+  color: $text !important; // overrides the text color in anchor tags.
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: none;
+  letter-spacing: 1px;
+
+  font-size: 0.85em;
+  font-weight: normal;
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 20px;
+
+  // @include border-radius($radius);
+  // @include background-clip(padding-box);
+
+  background-color: $color;
+  // @include background-image(linear-gradient(bottom, darken($color, 5%) 0%, $color 100%));
+
+  &:hover,
+  &:focus,
+  &:active {
+    // @include background-image(linear-gradient(bottom, $color 0%, darken($color, 5%) 100%));
+    background-color: darken($color, 5%);
+  }
+}
+
+
+// Quick link styles.
+@mixin link($color1: $link, $color2: $linkhover) {
+  &:link,
+  &:visited {
+    color: $color1;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color2;
+  }
+}
+
+// Transitions!
+@mixin transition($property: all, $time: 0.4s, $effect: ease-in-out, $delay: 0) {
+  -webkit-transition: $property $time $effect $delay;
+  -moz-transition: $property $time $effect $delay;
+  -o-transition: $property $time $effect $delay;
+  -ms-transition: $property $time $effect $delay;
+  transition: $property $time $effect $delay;
+}

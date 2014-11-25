@@ -1,0 +1,75 @@
+.l-header,
+.l-navigation {
+	@include clearfix;
+}
+
+
+html {
+	background: url(../images/page_bg.jpg) 0 0 repeat $bodybg;
+	height: 100%;
+}
+
+body {
+	
+}
+
+.l-header {
+	background: url(../images/banner.jpg) top center no-repeat $ltblack;
+	background-attachment: fixed;
+	padding: 20px 0;
+	margin-top: 50px;
+}
+
+.not-front .site-logo img {
+	width: 150px;
+	height: auto;
+}
+
+.l-branding {
+	text-align: center;
+}
+
+.l-navigation {
+	background-color: $ltblack;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	@include transition;
+
+	&.stuck {
+		background-color: rgba($ltblack, 0.5);
+		
+	}
+}
+
+.l-main {
+	background: url(../images/ice.png) top center repeat-x transparent;
+	background-position-y: -4px;
+	border-top: solid 1px #fff;
+
+	padding: 40px 0 20px 0;
+}
+
+.l-sponsor {
+	text-align: center;
+	background-color: rgba($blue, 0.1);
+	padding: 50px 0;
+	margin: 50px 0;
+}
+
+.l-footer {
+	background-color: rgba($ltblack, 0.5);
+	padding: 40px 0;
+}
+
+.field--name-field-sections {
+	border-top: dotted 1px $gray;
+	.node--section {
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-bottom: dotted 1px $gray;
+	}
+}
+
+

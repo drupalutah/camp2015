@@ -1,0 +1,99 @@
+
+// -----------------------------------------------------------------------------
+// Default Colors.
+// -----------------------------------------------------------------------------
+
+$blue: #0c79be;
+$ltblue: #75a4bd;
+$dkorange: #cc401d;
+$orange: #f27423;
+$green: #8bc53f;
+$pink: #bf0a74;
+$gray: #555;
+$ltblack: #2c2c2c;
+$black: #000;
+$white: #fff;
+$smoke: #f5f5f5;
+
+
+
+// -----------------------------------------------------------------------------
+// Color Variables.
+// Set the sitewide colors here. The goal is to not have to edit any other file.
+// -----------------------------------------------------------------------------
+
+$titletext: $white; // H1 and page titles.
+$headingtext: $ltblue; // Heading tags: h2, h3, etc...
+$globaltext: $ltblack; // All text on the site.
+
+$link: $ltblue; // All links except menus.
+$linkhover: $orange; // Link hover and active state.
+
+$menulink: $white; // Main menu link and underline.
+$menuhover: $ltblue; // Main menu hover state.
+$menuactive: $ltblue; // Main menu active state.
+
+$buttonbg: $green; // Default button style.
+$buttontext: #fff; // Default button text style
+
+$submitbg: $orange; // Default submit button style.
+$submittext: $white; // Default submit button text styel.
+
+$bodybg: $ltblack; // Background color on HTML and BODY tags.
+
+$headerbg: $smoke; // For a solid background on l-header.
+$header_gradient: true; // Set to true for gradients.
+	$headerbg_top: #fff;
+	$headerbg_bottom: $smoke;
+
+$contentbg: $smoke; // For a solid background on l-main.
+$content_gradient: true; // Set to true for gradients.
+	$contentbg_top: #fff;
+	$contentbg_bottom: $smoke;
+
+
+
+
+// -----------------------------------------------------------------------------
+// Typography.
+// -----------------------------------------------------------------------------
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(//fonts.googleapis.com/css?family=Oswald);
+
+$opensans:  'Open Sans', HelveticaNeue, Helvetica, Arial, sans-serif;
+$oswald:  'Oswald', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+$din: "din-condensed-web", sans-serif; // TypeKit.
+
+// Type definitions;
+$headingfont: $oswald;
+$globalfont: $opensans;
+
+
+
+// Susy Variables
+// -----------------------------------------------------------------------------
+
+// Set consistent vertical and horizontal spacing units.
+$vert-spacing-unit: 20px;
+$horz-spacing-unit: 1em;
+
+// Define Susy grid variables mobile first.
+$total-columns: 4;
+$column-width: 4em;
+$gutter-width: $horz-spacing-unit;
+$grid-padding: 20px;
+
+$container-style: magic;
+$container-width: 1064px;
+
+// Susy Media Layouts @see http://susy.oddbird.net/guides/reference/#ref-media-layouts
+// $smtab: 26em 8; // 25em = 400px
+// $tab: 44em 12; // At 44em use 12 columns.
+// $desk: 70em 16; // At 70em use 16 columns.
+
+$mobile: 0 767px 8;
+$smtab: 500px 8; // 25em = 400px
+$tab: 768px 12; // At 44em use 12 columns.
+$tabdesk: 840px 12; 
+$desk: 960px 16; // At 70em use 16 columns.
+
