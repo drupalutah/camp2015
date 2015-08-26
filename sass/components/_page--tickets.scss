@@ -1,0 +1,19 @@
+.node-3-product-commerce-price {
+	font-size: 2.5em;
+	color: $green;
+}
+.page-node-3 {
+	.group-right {
+		padding: 10px 20px;
+		@include border-radius(5px);
+		background-color: rgba($gray, 0.5);
+		color: $white;
+
+		.form-text {
+			width: 100%;
+		}
+		label {
+			color: $ltblue;
+		}
+	}
+}

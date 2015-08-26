@@ -1,0 +1,50 @@
+// View blocks in the Footer.
+.sponsors-platinum,
+.sponsors-gold {
+	margin-bottom: 40px;
+	
+	.item-list ul {
+		margin: 0;
+		padding: 0;
+	}
+	li.sponsor-row {
+		list-style: none;
+		padding: 10px;
+		margin: 0;
+		@include at-breakpoint($tab) {
+			display: inline-block;
+			width: 25%;
+		}
+
+		img {
+			vertical-align: middle;
+		}
+	}
+}
+.l-region--sponsor h2 {
+	font-size: 1em;
+}
+
+
+// View Page.
+.view-sponsors {
+	.sponsor-row {
+		padding: 10px;
+		margin: 10px 0 20px 0;
+		text-align: center;
+
+		@include at-breakpoint($tab) {
+			display: inline-block;
+			text-align: center;
+			width: 24.5%;
+			img {
+				max-height: 100px;
+				width: auto;
+			}
+		}
+		
+		img {
+			vertical-align: middle;
+		}
+	}
+}

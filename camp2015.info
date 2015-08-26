@@ -12,6 +12,7 @@ stylesheets[all][] = css/camp2015.normalize.css
 stylesheets[all][] = css/camp2015.hacks.css
 stylesheets[all][] = css/camp2015.styles.css
 stylesheets[all][] = css/camp2015.no-query.css
+stylesheets[print][] = css/camp2015.print.css
 
 ; ========================================
 ; Scripts
@@ -23,6 +24,7 @@ scripts[] = js/camp2015.behaviors.js
 ; ========================================
 regions[branding] = Branding
 regions[header] = Header
+regions[sponsor] = Sponsor (Full Width)
 regions[sponsor1] = Sponsor 1
 regions[sponsor2] = Sponsor 2
 regions[sponsor3] = Sponsor 3

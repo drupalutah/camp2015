@@ -9,15 +9,15 @@ html {
 	height: 100%;
 }
 
-body {
-	
-}
 
 .l-header {
 	background: url(../images/banner.jpg) top center no-repeat $ltblack;
 	background-attachment: fixed;
 	padding: 20px 0;
-	margin-top: 50px;
+	margin-top: 47px;
+}
+.admin-menu .l-navigation {
+	margin-top: 30px;
 }
 
 .not-front .site-logo img {

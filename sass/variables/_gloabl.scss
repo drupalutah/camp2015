@@ -24,7 +24,7 @@ $smoke: #f5f5f5;
 
 $titletext: $white; // H1 and page titles.
 $headingtext: $ltblue; // Heading tags: h2, h3, etc...
-$globaltext: $ltblack; // All text on the site.
+$globaltext: #eee; // All text on the site.
 
 $link: $ltblue; // All links except menus.
 $linkhover: $orange; // Link hover and active state.
@@ -68,6 +68,9 @@ $din: "din-condensed-web", sans-serif; // TypeKit.
 $headingfont: $oswald;
 $globalfont: $opensans;
 
+// .wf-loading {
+// 	display: none;
+// }
 
 
 // Susy Variables

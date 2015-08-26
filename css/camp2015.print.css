@@ -1,0 +1,17 @@
+/* line 1, ../sass/camp2015.print.scss */
+.page-checkout-complete {
+  font-size: 12px; }
+  /* line 4, ../sass/camp2015.print.scss */
+  .page-checkout-complete .l-header,
+  .page-checkout-complete .l-navigation,
+  .page-checkout-complete .l-footer,
+  .page-checkout-complete .l-sponsor {
+    display: none;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0; }
+  /* line 13, ../sass/camp2015.print.scss */
+  .page-checkout-complete table tr td {
+    vertical-align: top; }
+
+/*# sourceMappingURL=camp2015.print.css.map */

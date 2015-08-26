@@ -1,0 +1,10 @@
+.field--name-field-sections {
+	@include at-breakpoint($tab) {
+		.ds-3col-stacked-fluid > .group-left {
+			padding-right: 20px;
+		}
+		.ds-3col-stacked-fluid > .group-right {
+			padding-left: 20px;
+		}
+	}
+}

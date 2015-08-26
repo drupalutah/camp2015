@@ -1,0 +1,16 @@
+.views-exposed-widget {
+	label {
+		color: $blue;
+		text-transform: uppercase;
+	}
+	.bef-checkboxes label {
+		color: $ltblue;
+		text-transform: none;
+	}
+}
+
+// Overriding default module styles.
+.rate-info, 
+.rate-description {
+	color: #999;
+}

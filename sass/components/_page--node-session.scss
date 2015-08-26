@@ -1,0 +1,57 @@
+.node--session,
+.node--wish {
+	background: rgba($blue, 0.1);
+	.group-middle {
+		padding: 0 20px;
+		// background: rgba($blue, 0.1);
+	}
+
+	.group-right {
+		padding: 10px;
+		border-left: solid 3px $ltblue;
+		// background: rgba($blue, 0.1);
+		.field {
+			padding: 5px 0;
+		}
+		.field--type-taxonomy-term-reference {
+			font-size: 0.8em;
+
+			.field__label {
+				color: $ltblue;
+				text-transform: uppercase;
+			}
+		}
+		.field--name-field-status {
+			.field__label {
+				color: $ltblue;
+				text-transform: uppercase;
+			}
+		}
+	}
+	.field--name-author {
+		margin-bottom: 5px;
+		border-bottom: solid 1px $ltblue;
+		text-align: center;
+		color: $orange;
+	}
+	.field--name-back-to-sessions {
+		text-align: center;
+		border-top: solid 1px $ltblue;
+		.button {
+			@include button($blue);
+		}
+	}
+	.field--name-ds-user-picture {
+		text-align: center;
+	}
+}
+
+.flag-outer-spam {
+	text-align: center;
+
+	a {
+		@include button($ltblue);
+	}
+}
+
+

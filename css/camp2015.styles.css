@@ -1,5 +1,61 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 @import url(//fonts.googleapis.com/css?family=Oswald);
+/* line 1, ../sass/base/_comments.scss */
+.comment-add a {
+  color: #fff !important;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: none;
+  letter-spacing: 1px;
+  font-size: 0.85em;
+  font-weight: normal;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 20px;
+  background-color: #8bc53f; }
+  /* line 24, ../sass/abstractions/_mixins.scss */
+  .comment-add a:hover, .comment-add a:focus, .comment-add a:active {
+    background-color: #7eb436; }
+
+/* line 5, ../sass/base/_comments.scss */
+.comment-wrapper {
+  padding: 10px;
+  margin-top: 30px;
+  border-top: solid 1px #75a4bd; }
+  /* line 14, ../sass/base/_comments.scss */
+  .comment-wrapper .comment {
+    padding: 10px 0;
+    background: rgba(12, 121, 190, 0.1); }
+    /* line 20, ../sass/base/_comments.scss */
+    .comment-wrapper .comment .links li a {
+      color: #fff !important;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-shadow: none;
+      letter-spacing: 1px;
+      font-size: 0.85em;
+      font-weight: normal;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      padding: 5px 20px;
+      background-color: #75a4bd;
+      padding: 2px 6px;
+      font-size: 0.7em; }
+      /* line 24, ../sass/abstractions/_mixins.scss */
+      .comment-wrapper .comment .links li a:hover, .comment-wrapper .comment .links li a:focus, .comment-wrapper .comment .links li a:active {
+        background-color: #6499b5; }
+  /* line 27, ../sass/base/_comments.scss */
+  .comment-wrapper .form-actions {
+    text-align: right;
+    padding: 10px 0; }
+    /* line 31, ../sass/base/_comments.scss */
+    .comment-wrapper .form-actions input {
+      margin-left: 10px; }
+
 /* line 1, ../sass/base/_forms.scss */
 .button {
   color: #fff !important;
@@ -100,7 +156,7 @@ fieldset {
   padding-right: 1.25rem;
   margin-left: auto;
   margin-right: auto; }
-  /* line 38, ../../../../../../../.rvm/gems/ruby-1.9.3-p547@omega.camp2015/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
+  /* line 38, ../../../../../../../../.rvm/gems/ruby-1.9.3-p547@omega.camp2015/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
   .l-header .l-constrained:after,
   .l-sponsor .l-constrained:after,
   .l-main .l-constrained:after,
@@ -263,12 +319,16 @@ html {
   background: url(../images/page_bg.jpg) 0 0 repeat #2c2c2c;
   height: 100%; }
 
-/* line 16, ../sass/base/_layout.styles.scss */
+/* line 13, ../sass/base/_layout.styles.scss */
 .l-header {
   background: url(../images/banner.jpg) top center no-repeat #2c2c2c;
   background-attachment: fixed;
   padding: 20px 0;
-  margin-top: 50px; }
+  margin-top: 47px; }
+
+/* line 19, ../sass/base/_layout.styles.scss */
+.admin-menu .l-navigation {
+  margin-top: 30px; }
 
 /* line 23, ../sass/base/_layout.styles.scss */
 .not-front .site-logo img {
@@ -349,7 +409,7 @@ td, th {
 /* line 1, ../sass/base/_typography.scss */
 html,
 body {
-  color: #f5f5f5;
+  color: #eee;
   font-family: "Open Sans", HelveticaNeue, Helvetica, Arial, sans-serif; }
 
 /* line 7, ../sass/base/_typography.scss */
@@ -376,11 +436,26 @@ a:hover, a:focus, a:active {
   color: #f27423; }
 
 /* line 35, ../sass/abstractions/_mixins.scss */
+table a:link, table a:visited {
+  color: #8bc53f; }
+/* line 39, ../sass/abstractions/_mixins.scss */
+table a:hover, table a:focus, table a:active {
+  color: #f27423; }
+
+/* line 35, ../sass/abstractions/_mixins.scss */
 .l-footer:link, .l-footer:visited {
   color: #555; }
 /* line 39, ../sass/abstractions/_mixins.scss */
 .l-footer:hover, .l-footer:focus, .l-footer:active {
   color: #f5f5f5; }
+
+@media (min-width: 768px) {
+  /* line 3, ../sass/components/_ds_layouts.scss */
+  .field--name-field-sections .ds-3col-stacked-fluid > .group-left {
+    padding-right: 20px; }
+  /* line 6, ../sass/components/_ds_layouts.scss */
+  .field--name-field-sections .ds-3col-stacked-fluid > .group-right {
+    padding-left: 20px; } }
 
 /* line 2, ../sass/components/_navigation.scss */
 .l-navigation ul.menu {
@@ -467,28 +542,132 @@ a:hover, a:focus, a:active {
       .l-footer ul.menu li a.active {
         color: #75a4bd; }
 
-/* line 1, ../sass/components/_page--sponsors.scss */
+/* line 2, ../sass/components/_node-add.scss */
+.page-node-add .vertical-tabs {
+  display: none; }
+/* line 6, ../sass/components/_node-add.scss */
+.page-node-add .form-radios .form-item {
+  margin-left: 10px; }
+/* line 10, ../sass/components/_node-add.scss */
+.page-node-add .field-links-values,
+.page-node-add fieldset,
+.page-node-add .field-type-file {
+  margin-bottom: 10px; }
+
+/* line 1, ../sass/components/_page--node-session.scss */
+.node--session,
+.node--wish {
+  background: rgba(12, 121, 190, 0.1); }
+  /* line 4, ../sass/components/_page--node-session.scss */
+  .node--session .group-middle,
+  .node--wish .group-middle {
+    padding: 0 20px; }
+  /* line 9, ../sass/components/_page--node-session.scss */
+  .node--session .group-right,
+  .node--wish .group-right {
+    padding: 10px;
+    border-left: solid 3px #75a4bd; }
+    /* line 13, ../sass/components/_page--node-session.scss */
+    .node--session .group-right .field,
+    .node--wish .group-right .field {
+      padding: 5px 0; }
+    /* line 16, ../sass/components/_page--node-session.scss */
+    .node--session .group-right .field--type-taxonomy-term-reference,
+    .node--wish .group-right .field--type-taxonomy-term-reference {
+      font-size: 0.8em; }
+      /* line 19, ../sass/components/_page--node-session.scss */
+      .node--session .group-right .field--type-taxonomy-term-reference .field__label,
+      .node--wish .group-right .field--type-taxonomy-term-reference .field__label {
+        color: #75a4bd;
+        text-transform: uppercase; }
+    /* line 25, ../sass/components/_page--node-session.scss */
+    .node--session .group-right .field--name-field-status .field__label,
+    .node--wish .group-right .field--name-field-status .field__label {
+      color: #75a4bd;
+      text-transform: uppercase; }
+  /* line 31, ../sass/components/_page--node-session.scss */
+  .node--session .field--name-author,
+  .node--wish .field--name-author {
+    margin-bottom: 5px;
+    border-bottom: solid 1px #75a4bd;
+    text-align: center;
+    color: #f27423; }
+  /* line 37, ../sass/components/_page--node-session.scss */
+  .node--session .field--name-back-to-sessions,
+  .node--wish .field--name-back-to-sessions {
+    text-align: center;
+    border-top: solid 1px #75a4bd; }
+    /* line 40, ../sass/components/_page--node-session.scss */
+    .node--session .field--name-back-to-sessions .button,
+    .node--wish .field--name-back-to-sessions .button {
+      color: #fff !important;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-shadow: none;
+      letter-spacing: 1px;
+      font-size: 0.85em;
+      font-weight: normal;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      padding: 5px 20px;
+      background-color: #0c79be; }
+      /* line 24, ../sass/abstractions/_mixins.scss */
+      .node--session .field--name-back-to-sessions .button:hover, .node--session .field--name-back-to-sessions .button:focus, .node--session .field--name-back-to-sessions .button:active,
+      .node--wish .field--name-back-to-sessions .button:hover,
+      .node--wish .field--name-back-to-sessions .button:focus,
+      .node--wish .field--name-back-to-sessions .button:active {
+        background-color: #0a6aa6; }
+  /* line 44, ../sass/components/_page--node-session.scss */
+  .node--session .field--name-ds-user-picture,
+  .node--wish .field--name-ds-user-picture {
+    text-align: center; }
+
+/* line 49, ../sass/components/_page--node-session.scss */
+.flag-outer-spam {
+  text-align: center; }
+  /* line 52, ../sass/components/_page--node-session.scss */
+  .flag-outer-spam a {
+    color: #fff !important;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: none;
+    letter-spacing: 1px;
+    font-size: 0.85em;
+    font-weight: normal;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 20px;
+    background-color: #75a4bd; }
+    /* line 24, ../sass/abstractions/_mixins.scss */
+    .flag-outer-spam a:hover, .flag-outer-spam a:focus, .flag-outer-spam a:active {
+      background-color: #6499b5; }
+
+/* line 1, ../sass/components/_page--sponsor-product.scss */
 .node-4-product-commerce-price {
   font-size: 2.5em;
   color: #8bc53f; }
 
-/* line 13, ../sass/components/_page--sponsors.scss */
+/* line 13, ../sass/components/_page--sponsor-product.scss */
 h4 {
   border-bottom: dotted 1px #75a4bd; }
-  /* line 15, ../sass/components/_page--sponsors.scss */
+  /* line 15, ../sass/components/_page--sponsor-product.scss */
   h4.bronze {
     color: #9e7b01; }
-  /* line 18, ../sass/components/_page--sponsors.scss */
+  /* line 18, ../sass/components/_page--sponsor-product.scss */
   h4.silver {
     color: #879393; }
-  /* line 21, ../sass/components/_page--sponsors.scss */
+  /* line 21, ../sass/components/_page--sponsor-product.scss */
   h4.gold {
     color: #b09b28; }
-  /* line 24, ../sass/components/_page--sponsors.scss */
+  /* line 24, ../sass/components/_page--sponsor-product.scss */
   h4.platinum {
     color: #a9c2c4; }
 
-/* line 30, ../sass/components/_page--sponsors.scss */
+/* line 30, ../sass/components/_page--sponsor-product.scss */
 .page-node-4 .group-right {
   padding: 10px 20px;
   -moz-border-radius: 5px;
@@ -496,8 +675,141 @@ h4 {
   border-radius: 5px;
   background-color: rgba(85, 85, 85, 0.5);
   color: #fff; }
-  /* line 36, ../sass/components/_page--sponsors.scss */
+  /* line 36, ../sass/components/_page--sponsor-product.scss */
   .page-node-4 .group-right .form-text {
     width: 100%; }
+  /* line 39, ../sass/components/_page--sponsor-product.scss */
+  .page-node-4 .group-right label {
+    color: #75a4bd; }
+
+/* line 1, ../sass/components/_page--tickets.scss */
+.node-3-product-commerce-price {
+  font-size: 2.5em;
+  color: #8bc53f; }
+
+/* line 6, ../sass/components/_page--tickets.scss */
+.page-node-3 .group-right {
+  padding: 10px 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgba(85, 85, 85, 0.5);
+  color: #fff; }
+  /* line 12, ../sass/components/_page--tickets.scss */
+  .page-node-3 .group-right .form-text {
+    width: 100%; }
+  /* line 15, ../sass/components/_page--tickets.scss */
+  .page-node-3 .group-right label {
+    color: #75a4bd; }
+
+/* line 2, ../sass/components/_views--sessions.scss */
+.views-exposed-widget label {
+  color: #0c79be;
+  text-transform: uppercase; }
+/* line 6, ../sass/components/_views--sessions.scss */
+.views-exposed-widget .bef-checkboxes label {
+  color: #75a4bd;
+  text-transform: none; }
+
+/* line 13, ../sass/components/_views--sessions.scss */
+.rate-info,
+.rate-description {
+  color: #999; }
+
+/* line 2, ../sass/components/_views--sponsors.scss */
+.sponsors-platinum,
+.sponsors-gold {
+  margin-bottom: 40px; }
+  /* line 6, ../sass/components/_views--sponsors.scss */
+  .sponsors-platinum .item-list ul,
+  .sponsors-gold .item-list ul {
+    margin: 0;
+    padding: 0; }
+  /* line 10, ../sass/components/_views--sponsors.scss */
+  .sponsors-platinum li.sponsor-row,
+  .sponsors-gold li.sponsor-row {
+    list-style: none;
+    padding: 10px;
+    margin: 0; }
+    @media (min-width: 768px) {
+      /* line 10, ../sass/components/_views--sponsors.scss */
+      .sponsors-platinum li.sponsor-row,
+      .sponsors-gold li.sponsor-row {
+        display: inline-block;
+        width: 25%; } }
+    /* line 19, ../sass/components/_views--sponsors.scss */
+    .sponsors-platinum li.sponsor-row img,
+    .sponsors-gold li.sponsor-row img {
+      vertical-align: middle; }
+
+/* line 24, ../sass/components/_views--sponsors.scss */
+.l-region--sponsor h2 {
+  font-size: 1em; }
+
+/* line 31, ../sass/components/_views--sponsors.scss */
+.view-sponsors .sponsor-row {
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  text-align: center; }
+  @media (min-width: 768px) {
+    /* line 31, ../sass/components/_views--sponsors.scss */
+    .view-sponsors .sponsor-row {
+      display: inline-block;
+      text-align: center;
+      width: 24.5%; }
+      /* line 40, ../sass/components/_views--sponsors.scss */
+      .view-sponsors .sponsor-row img {
+        max-height: 100px;
+        width: auto; } }
+  /* line 46, ../sass/components/_views--sponsors.scss */
+  .view-sponsors .sponsor-row img {
+    vertical-align: middle; }
+
+/* line 2, ../sass/components/_views--wishes.scss */
+.page-sessions-wishes .views-row {
+  margin-bottom: 30px; }
+  /* line 4, ../sass/components/_views--wishes.scss */
+  .page-sessions-wishes .views-row .group-middle {
+    overflow: hidden;
+    *zoom: 1; }
+/* line 8, ../sass/components/_views--wishes.scss */
+.page-sessions-wishes .field--name-node-link a {
+  color: #fff !important;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: none;
+  letter-spacing: 1px;
+  font-size: 0.85em;
+  font-weight: normal;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 20px;
+  background-color: #75a4bd;
+  padding: 2px 6px;
+  font-size: 0.7em; }
+  /* line 24, ../sass/abstractions/_mixins.scss */
+  .page-sessions-wishes .field--name-node-link a:hover, .page-sessions-wishes .field--name-node-link a:focus, .page-sessions-wishes .field--name-node-link a:active {
+    background-color: #6499b5; }
+
+/* line 14, ../sass/components/_views--wishes.scss */
+.button.wish {
+  color: #fff !important;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: none;
+  letter-spacing: 1px;
+  font-size: 0.85em;
+  font-weight: normal;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 20px;
+  background-color: #0c79be; }
+  /* line 24, ../sass/abstractions/_mixins.scss */
+  .button.wish:hover, .button.wish:focus, .button.wish:active {
+    background-color: #0a6aa6; }
 
 /*# sourceMappingURL=camp2015.styles.css.map */

@@ -1,0 +1,16 @@
+.page-checkout-complete {
+	font-size: 12px;
+
+	.l-header,
+	.l-navigation,
+	.l-footer,
+	.l-sponsor {
+		display: none;
+		visibility: hidden;
+		overflow: hidden;
+		height: 0;
+	}
+	table tr td {
+		vertical-align: top;
+	}
+}

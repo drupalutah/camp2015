@@ -128,9 +128,10 @@
   </div>
   </div>
 
-    <?php if($page['sponsor1'] || $page['sponsor2'] || $page['sponsor3'] ): ?>
+    <?php if($page['sponsor'] || $page['sponsor1'] || $page['sponsor2'] || $page['sponsor3'] ): ?>
   <div class="l-sponsor">
     <div class="l-constrained">
+    <?php print render($page['sponsor']); ?>
     <?php print render($page['sponsor1']); ?>
     <?php print render($page['sponsor2']); ?>
     <?php print render($page['sponsor3']); ?>
